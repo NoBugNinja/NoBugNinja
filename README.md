@@ -8,13 +8,6 @@
 
 ### 👨‍💻 About Me
 
-[cite_start]I am a 3rd-semester Information Technology student studying under the Anna University syllabus[cite: 1, 2]. [cite_start]My primary focus right now is mastering Data Structures and Algorithms through a structured learning path and consistent LeetCode practice[cite: 4]. [cite_start]I am also on a mission to learn absolutely everything about JavaScript[cite: 5].
-
-- [cite_start]🎯 Currently building my resume and projects to target internships at Fortune 500 companies, with a specific focus on Amazon before my 4th semester[cite: 2, 16, 18].
-- [cite_start]☁️ Preparing for the Azure Fundamentals certification as the first step toward my long-term goal of becoming a Cloud Architect[cite: 6, 7].
-- [cite_start]💻 My development setup is powered by an Intel Core i7 13th Gen with an NVIDIA RTX 4060[cite: 10].
-- [cite_start]🏋️‍♂️ Outside of the IDE, I am kicking off a beginner fitness routine and figuring out how to eat more fruit—strictly bananas, definitely not apples[cite: 13, 14, 15].
-
 ---
 
 ### 🛠️ Tech Stack & Learning Focus
@@ -34,10 +27,6 @@
 
 ### 🚀 Featured Work & Academics
 
-* [cite_start]**C++ Password Generator:** A secure utility project built to apply core programming concepts[cite: 8].
-* [cite_start]**Academic Implementations:** Developed an HTML portfolio and tackled coursework involving video codecs, JPEG compression, and object-oriented programming[cite: 19, 20].
-
----
 
 ### 📈 GitHub Stats
 
