@@ -27,9 +27,9 @@
 
 ## ⚡ BUILDING SOFTWARE THAT WORKS.
 
-> *"I like taking real problems, turning them into software, and seeing how far I can take the idea."*
-
-I’m a product-minded developer who builds complete web products from scratch. Instead of building tutorial clones, I look for genuine friction points — manual tracking, unvalidated startup assumptions, or noisy candidate screening — and build tools that actually work.
+<p align="center">
+  <img src="assets/building-software-card.svg" alt="Building Software That Works — Mohammed Shafiq S" width="900" />
+</p>
 
 ---
 

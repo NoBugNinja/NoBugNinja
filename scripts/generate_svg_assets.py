@@ -668,6 +668,95 @@ def create_tech_toolbox_svg(filepath):
         f.write(svg_content.strip())
     print(f"Created {filepath}")
 
+def create_building_software_card_svg(filepath):
+    svg_content = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 220" width="100%" height="auto" style="max-width: 920px; font-family: -apple-system, BlinkMacSystemFont, Consolas, 'Segoe UI', monospace;">
+  <defs>
+    <filter id="card-shadow" x="0%" y="0%" width="120%" height="120%">
+      <feDropShadow dx="3.5" dy="3.5" stdDeviation="0" flood-color="#121212" flood-opacity="1"/>
+    </filter>
+    <filter id="inner-shadow" x="0%" y="0%" width="120%" height="120%">
+      <feDropShadow dx="2" dy="2" stdDeviation="0" flood-color="#121212" flood-opacity="1"/>
+    </filter>
+  </defs>
+
+  <g transform="translate(6, 6)">
+    <!-- Base Physical Card: Off-White Cardstock -->
+    <rect x="0" y="0" width="904" height="206" rx="8" fill="#FAF9F6" stroke="#121212" stroke-width="3" filter="url(#card-shadow)"/>
+
+    <!-- ================= TOP HEADER / STATUS ROW ================= -->
+    <g transform="translate(18, 14)">
+      <!-- Tab Badge -->
+      <rect x="0" y="0" width="144" height="22" rx="4" fill="#121212"/>
+      <text x="12" y="15" font-size="9.5" font-weight="900" fill="#fde047" letter-spacing="1">⚡ CORE DIRECTIVE</text>
+
+      <!-- Micro-Labels: Input -> Output Pipeline -->
+      <g transform="translate(156, 0)">
+        <rect x="0" y="0" width="136" height="22" rx="4" fill="#ffffff" stroke="#121212" stroke-width="1.2"/>
+        <text x="8" y="15" font-size="8.5" font-weight="800" fill="#64748b" font-family="monospace">INPUT // REAL PROBLEM</text>
+        
+        <!-- Connecting Circuit Trace -->
+        <line x1="136" y1="11" x2="158" y2="11" stroke="#cbd5e1" stroke-width="1.5"/>
+        <circle cx="147" cy="11" r="2" fill="#3b82f6"/>
+        <polygon points="156,8 162,11 156,14" fill="#64748b"/>
+
+        <rect x="166" y="0" width="168" height="22" rx="4" fill="#ffffff" stroke="#121212" stroke-width="1.2"/>
+        <text x="174" y="15" font-size="8.5" font-weight="800" fill="#059669" font-family="monospace">OUTPUT // WORKING SOFTWARE</text>
+
+        <!-- Seamless output lead -->
+        <line x1="334" y1="11" x2="350" y2="11" stroke="#cbd5e1" stroke-width="1.5"/>
+      </g>
+    </g>
+
+    <!-- Top-Right Subtle Circuit Trace -->
+    <g transform="translate(506, 14)">
+      <path d="M 0 11 L 320 11 L 336 26 L 336 34" fill="none" stroke="#cbd5e1" stroke-width="1.5" stroke-linecap="round"/>
+      <circle cx="0" cy="11" r="2.5" fill="#fde047" stroke="#121212" stroke-width="1"/>
+      <circle cx="160" cy="11" r="2" fill="#3b82f6"/>
+      <circle cx="336" cy="34" r="2.5" fill="#10b981" stroke="#121212" stroke-width="1"/>
+      <text x="345" y="24" font-size="8" font-weight="800" fill="#94a3b8" font-family="monospace">PCB.01</text>
+    </g>
+
+    <!-- ================= RAISED QUOTE CARD ================= -->
+    <g transform="translate(18, 44)">
+      <!-- Quote Card Surface -->
+      <rect x="0" y="0" width="868" height="68" rx="6" fill="#FFFFFF" stroke="#121212" stroke-width="2" filter="url(#inner-shadow)"/>
+      
+      <!-- Yellow Accent Left Spine -->
+      <rect x="0" y="0" width="6" height="68" rx="2" fill="#fde047" stroke="#121212" stroke-width="2"/>
+
+      <!-- Quote Emblem -->
+      <g transform="translate(18, 16)">
+        <rect x="0" y="0" width="26" height="26" rx="4" fill="#fde047" stroke="#121212" stroke-width="1.5"/>
+        <text x="7" y="18" font-size="16" font-weight="900" fill="#121212" font-family="Georgia, serif">“</text>
+      </g>
+
+      <!-- The Quote Text -->
+      <text x="56" y="27" font-size="15.5" font-weight="800" fill="#0f172a" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">"I like taking real problems, turning them into software,</text>
+      <text x="56" y="49" font-size="15.5" font-weight="800" fill="#0f172a" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">and seeing how far I can take the idea."</text>
+    </g>
+
+    <!-- ================= MAIN PARAGRAPH (SECOND LAYER) ================= -->
+    <g transform="translate(18, 126)">
+      <text x="18" y="16" font-size="13" font-weight="500" fill="#334155" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">I’m a product-minded developer who builds complete web products from scratch. Instead of building tutorial clones,</text>
+      <text x="18" y="37" font-size="13" font-weight="500" fill="#334155" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">I look for genuine friction points — manual tracking, unvalidated startup assumptions, or noisy candidate screening —</text>
+      <text x="18" y="58" font-size="13" font-weight="800" fill="#0f172a" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">and build tools that actually work.</text>
+    </g>
+
+    <!-- ================= SUBTLE BOTTOM-RIGHT CIRCUIT TRACE ================= -->
+    <g transform="translate(420, 180)">
+      <path d="M 0 6 L 140 6 L 156 18 L 310 18 L 324 6 L 430 6 L 444 -8 L 444 -16" fill="none" stroke="#cbd5e1" stroke-width="1.5" stroke-linecap="round"/>
+      <circle cx="0" cy="6" r="2.5" fill="#10b981" stroke="#121212" stroke-width="1.2"/>
+      <circle cx="310" cy="18" r="2.5" fill="#3b82f6" stroke="#121212" stroke-width="1.2"/>
+      <circle cx="430" cy="6" r="2.5" fill="#fde047" stroke="#121212" stroke-width="1.2"/>
+      <text x="12" y="-2" font-size="8" font-weight="800" fill="#94a3b8" font-family="monospace">TRACE // 0x4B</text>
+      <text x="175" y="10" font-size="8" font-weight="800" fill="#64748b" font-family="monospace">SYSTEM // PRODUCTION READY</text>
+    </g>
+  </g>
+</svg>"""
+    with open(filepath, "w", encoding="utf-8") as f:
+        f.write(svg_content.strip())
+    print(f"Created {filepath}")
+
 if __name__ == "__main__":
     create_exploring_cards_svg("assets/exploring-cards.svg")
     create_how_i_build_svg("assets/build-pipeline.svg")
@@ -676,3 +765,4 @@ if __name__ == "__main__":
     create_project_skillsync_svg("assets/project-skillsync.svg")
     create_project_opportunityos_svg("assets/project-opportunityos.svg")
     create_tech_toolbox_svg("assets/tech-toolbox.svg")
+    create_building_software_card_svg("assets/building-software-card.svg")
