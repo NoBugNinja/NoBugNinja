@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 220" width="100%" height="auto" style="max-width: 440px; font-family: -apple-system, BlinkMacSystemFont, Consolas, 'Segoe UI', monospace;">
+  <defs>
+    <filter id="p-shadow" x="0%" y="0%" width="120%" height="120%">
+      <feDropShadow dx="3" dy="3" stdDeviation="0" flood-color="#121212" flood-opacity="1"/>
+    </filter>
+  </defs>
+
+  <g transform="translate(6, 6)">
+    <rect x="0" y="0" width="424" height="204" rx="8" fill="#15171e" stroke="#121212" stroke-width="3" filter="url(#p-shadow)"/>
+    <!-- Titlebar -->
+    <rect x="0" y="0" width="424" height="30" rx="6" fill="#a78bfa" stroke="#121212" stroke-width="3"/>
+    <circle cx="14" cy="15" r="4.5" fill="#fb7185" stroke="#121212" stroke-width="1"/>
+    <circle cx="28" cy="15" r="4.5" fill="#fde047" stroke="#121212" stroke-width="1"/>
+    <circle cx="42" cy="15" r="4.5" fill="#4ade80" stroke="#121212" stroke-width="1"/>
+    <text x="60" y="20" font-size="11" font-weight="900" fill="#121212" letter-spacing="0.5">OPPORTUNITYOS // CAREER SUITE</text>
+    <rect x="315" y="5" width="98" height="20" rx="4" fill="#121212"/>
+    <text x="323" y="19" font-size="9" font-weight="800" fill="#a78bfa">● PROD SYSTEM</text>
+
+    <!-- Mini UI Mockup -->
+    <g transform="translate(14, 42)">
+      <rect x="0" y="0" width="396" height="88" rx="6" fill="#1c1e27" stroke="#2e3240" stroke-width="1.5"/>
+      <g transform="translate(12, 10)">
+        <text x="0" y="12" font-size="9" font-weight="800" fill="#a78bfa">GROQ SDK LLM INFERENCE ENGINE</text>
+        <g transform="translate(0, 22)">
+          <rect x="0" y="0" width="105" height="18" rx="3" fill="#2d2540" stroke="#a78bfa" stroke-width="1"/>
+          <text x="6" y="12" font-size="8.5" font-weight="800" fill="#a78bfa">LATENCY &lt;110ms</text>
+          <rect x="112" y="0" width="75" height="18" rx="3" fill="#252834"/>
+          <text x="118" y="12" font-size="8.5" font-weight="700" fill="#9ca3af">ATS Opt</text>
+        </g>
+        <text x="0" y="56" font-size="9" font-weight="700" fill="#9ca3af">Cloudflare R2 multi-tenant document vault</text>
+        <text x="0" y="70" font-size="9" font-weight="700" fill="#4ade80">Integrated via AWS S3 SDK presigned URLs</text>
+      </g>
+      <g transform="translate(225, 10)">
+        <rect x="0" y="0" width="160" height="66" rx="4" fill="#242735" stroke="#3d4255" stroke-width="1"/>
+        <text x="10" y="18" font-size="9" font-weight="800" fill="#ff90e8">ACTIVE PIPELINE</text>
+        <text x="10" y="38" font-size="16" font-weight="900" fill="#ffffff">18 <tspan font-size="10" fill="#4ade80">LEADS MATCHED</tspan></text>
+        <text x="10" y="54" font-size="8.5" font-weight="600" fill="#9ca3af">Next.js 16 + React 19</text>
+      </g>
+    </g>
+
+    <!-- Description & Stack -->
+    <text x="14" y="150" font-size="11.5" font-weight="700" fill="#ffffff">Full-stack career automation platform with AI resume roasting &amp; matching.</text>
+    <g transform="translate(14, 166)">
+      <rect x="0" y="0" width="62" height="20" rx="3" fill="#232630" stroke="#374151" stroke-width="1"/>
+      <text x="6" y="14" font-size="8.5" font-weight="800" fill="#e5e7eb">Next.js 16</text>
+      <rect x="68" y="0" width="56" height="20" rx="3" fill="#232630" stroke="#374151" stroke-width="1"/>
+      <text x="74" y="14" font-size="8.5" font-weight="800" fill="#e5e7eb">Groq AI</text>
+      <rect x="130" y="0" width="56" height="20" rx="3" fill="#232630" stroke="#374151" stroke-width="1"/>
+      <text x="136" y="14" font-size="8.5" font-weight="800" fill="#e5e7eb">AWS S3</text>
+      <rect x="192" y="0" width="48" height="20" rx="3" fill="#232630" stroke="#374151" stroke-width="1"/>
+      <text x="198" y="14" font-size="8.5" font-weight="800" fill="#e5e7eb">R2</text>
+      <rect x="315" y="0" width="95" height="20" rx="4" fill="#a78bfa" stroke="#121212" stroke-width="1.5"/>
+      <text x="323" y="14" font-size="8.5" font-weight="900" fill="#121212">EXPLORE REPO ↗</text>
+    </g>
+  </g>
+</svg>

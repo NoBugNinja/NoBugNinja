@@ -244,7 +244,7 @@ def render_frame(stage, cursor_blink=True):
         line_y += 24
         
     # Blinking cursor line
-    cursor_str = "nobugninja@svce:~/build$ "
+    cursor_str = "nobugninja@builder:~/build$ "
     draw.text((term_x + 14, line_y + 6), cursor_str, font=FONT_MONO_BOLD, fill=COLOR_PINK)
     cursor_x = term_x + 14 + int(draw.textlength(cursor_str, font=FONT_MONO_BOLD))
     if cursor_blink:
@@ -268,7 +268,7 @@ def render_frame(stage, cursor_blink=True):
     draw.text((475, STATUSBAR_Y + 8), "│", font=FONT_MONO_SMALL, fill=COLOR_MUTED_GRAY)
     draw.text((490, STATUSBAR_Y + 8), f"STATUS: {stage['footer_status']}", font=FONT_MONO_SMALL, fill=stage["badge_color"])
     draw.text((670, STATUSBAR_Y + 8), "│", font=FONT_MONO_SMALL, fill=COLOR_MUTED_GRAY)
-    draw.text((685, STATUSBAR_Y + 8), "CHENNAI, IN", font=FONT_MONO_SMALL, fill=COLOR_MUTED_GRAY)
+    draw.text((685, STATUSBAR_Y + 8), "ONLINE // LIVE", font=FONT_MONO_SMALL, fill=COLOR_MUTED_GRAY)
 
     return img
 

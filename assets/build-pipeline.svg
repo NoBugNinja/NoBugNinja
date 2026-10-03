@@ -1,119 +1,96 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 220" width="100%" height="auto" style="max-width: 920px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Consolas, 'Courier New', monospace;">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 180" width="100%" height="auto" style="max-width: 920px; font-family: -apple-system, BlinkMacSystemFont, Consolas, 'Segoe UI', monospace;">
   <defs>
-    <filter id="neo-shadow" x="0%" y="0%" width="120%" height="120%">
-      <feDropShadow dx="4" dy="4" stdDeviation="0" flood-color="#121212" flood-opacity="1"/>
-    </filter>
-    <filter id="neo-shadow-sm" x="0%" y="0%" width="120%" height="120%">
-      <feDropShadow dx="2.5" dy="2.5" stdDeviation="0" flood-color="#121212" flood-opacity="1"/>
+    <filter id="build-shadow" x="0%" y="0%" width="120%" height="120%">
+      <feDropShadow dx="3.5" dy="3.5" stdDeviation="0" flood-color="#121212" flood-opacity="1"/>
     </filter>
   </defs>
 
-  <!-- Step 1: DISCOVER -->
+  <!-- Step 1: THINK -->
   <g transform="translate(10, 10)">
-    <!-- Shadow & Card -->
-    <rect x="0" y="0" width="162" height="195" rx="8" fill="#fefce8" stroke="#121212" stroke-width="3" filter="url(#neo-shadow)"/>
-    <!-- Header Pill -->
-    <rect x="0" y="0" width="162" height="34" rx="6" fill="#fde047" stroke="#121212" stroke-width="3"/>
-    <text x="12" y="22" font-size="11" font-weight="900" fill="#121212" letter-spacing="0.5">01 // DISCOVER</text>
-    <circle cx="145" cy="17" r="4" fill="#121212"/>
-    <!-- Content -->
-    <text x="12" y="58" font-size="16" font-weight="900" fill="#121212">FIND PAIN</text>
-    <text x="12" y="74" font-size="10" font-weight="700" fill="#854d0e">REAL USER FRICTION</text>
-    <line x1="12" y1="84" x2="150" y2="84" stroke="#121212" stroke-width="1.5" stroke-dasharray="3,3"/>
-    <text x="12" y="104" font-size="10.5" font-weight="600" fill="#374151">• Reddit sentiment</text>
-    <text x="12" y="122" font-size="10.5" font-weight="600" fill="#374151">• Campus workflows</text>
-    <text x="12" y="140" font-size="10.5" font-weight="600" fill="#374151">• "Why is this manual?"</text>
-    <!-- Status Pill -->
-    <rect x="12" y="158" width="138" height="24" rx="4" fill="#ffffff" stroke="#121212" stroke-width="2"/>
-    <text x="22" y="174" font-size="9.5" font-weight="800" fill="#121212">SIGNAL VERIFIED ✓</text>
+    <rect x="0" y="0" width="158" height="155" rx="8" fill="#181920" stroke="#121212" stroke-width="3" filter="url(#build-shadow)"/>
+    <rect x="0" y="0" width="158" height="32" rx="6" fill="#fde047" stroke="#121212" stroke-width="3"/>
+    <text x="10" y="21" font-size="11" font-weight="900" fill="#121212">01 // THINK</text>
+    <text x="12" y="58" font-size="15" font-weight="900" fill="#ffffff">UNDERSTAND</text>
+    <text x="12" y="74" font-size="10" font-weight="700" fill="#fde047">THE PROBLEM</text>
+    <line x1="12" y1="84" x2="146" y2="84" stroke="#2d3139" stroke-width="1"/>
+    <text x="12" y="106" font-size="10.5" font-weight="500" fill="#9ca3af">Identify real friction</text>
+    <text x="12" y="122" font-size="10.5" font-weight="500" fill="#9ca3af">and core user pain</text>
+    <text x="12" y="138" font-size="10.5" font-weight="500" fill="#9ca3af">before touching code.</text>
   </g>
 
   <!-- Arrow 1 -->
-  <g transform="translate(176, 92)">
-    <circle cx="9" cy="9" r="14" fill="#121212"/>
-    <path d="M5 9 L13 9 M10 6 L13 9 L10 12" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <g transform="translate(173, 75)">
+    <circle cx="8" cy="8" r="12" fill="#121212"/>
+    <path d="M4 8 L12 8 M9 5 L12 8 L9 11" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
   </g>
 
-  <!-- Step 2: ARCHITECT -->
-  <g transform="translate(196, 10)">
-    <rect x="0" y="0" width="162" height="195" rx="8" fill="#fdf2f8" stroke="#121212" stroke-width="3" filter="url(#neo-shadow)"/>
-    <rect x="0" y="0" width="162" height="34" rx="6" fill="#ff90e8" stroke="#121212" stroke-width="3"/>
-    <text x="12" y="22" font-size="11" font-weight="900" fill="#121212" letter-spacing="0.5">02 // ARCHITECT</text>
-    <circle cx="145" cy="17" r="4" fill="#121212"/>
-    <text x="12" y="58" font-size="16" font-weight="900" fill="#121212">BUILD CLEAN</text>
-    <text x="12" y="74" font-size="10" font-weight="700" fill="#9d174d">SCHEMAS &amp; STREAMS</text>
-    <line x1="12" y1="84" x2="150" y2="84" stroke="#121212" stroke-width="1.5" stroke-dasharray="3,3"/>
-    <text x="12" y="104" font-size="10.5" font-weight="600" fill="#374151">• Next.js 16 + React 19</text>
-    <text x="12" y="122" font-size="10.5" font-weight="600" fill="#374151">• Supabase PostgreSQL</text>
-    <text x="12" y="140" font-size="10.5" font-weight="600" fill="#374151">• SSE Real-time feeds</text>
-    <rect x="12" y="158" width="138" height="24" rx="4" fill="#ffffff" stroke="#121212" stroke-width="2"/>
-    <text x="22" y="174" font-size="9.5" font-weight="800" fill="#121212">MODULAR STACK ✓</text>
+  <!-- Step 2: DESIGN -->
+  <g transform="translate(193, 10)">
+    <rect x="0" y="0" width="158" height="155" rx="8" fill="#181920" stroke="#121212" stroke-width="3" filter="url(#build-shadow)"/>
+    <rect x="0" y="0" width="158" height="32" rx="6" fill="#ff90e8" stroke="#121212" stroke-width="3"/>
+    <text x="10" y="21" font-size="11" font-weight="900" fill="#121212">02 // DESIGN</text>
+    <text x="12" y="58" font-size="15" font-weight="900" fill="#ffffff">ARCHITECT</text>
+    <text x="12" y="74" font-size="10" font-weight="700" fill="#ff90e8">THE SYSTEM</text>
+    <line x1="12" y1="84" x2="146" y2="84" stroke="#2d3139" stroke-width="1"/>
+    <text x="12" y="106" font-size="10.5" font-weight="500" fill="#9ca3af">Figure out the product</text>
+    <text x="12" y="122" font-size="10.5" font-weight="500" fill="#9ca3af">flows, data schemas,</text>
+    <text x="12" y="138" font-size="10.5" font-weight="500" fill="#9ca3af">and decoupled APIs.</text>
   </g>
 
   <!-- Arrow 2 -->
-  <g transform="translate(362, 92)">
-    <circle cx="9" cy="9" r="14" fill="#121212"/>
-    <path d="M5 9 L13 9 M10 6 L13 9 L10 12" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <g transform="translate(356, 75)">
+    <circle cx="8" cy="8" r="12" fill="#121212"/>
+    <path d="M4 8 L12 8 M9 5 L12 8 L9 11" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
   </g>
 
-  <!-- Step 3: BREAK IT -->
-  <g transform="translate(382, 10)">
-    <rect x="0" y="0" width="162" height="195" rx="8" fill="#fff1f2" stroke="#121212" stroke-width="3" filter="url(#neo-shadow)"/>
-    <rect x="0" y="0" width="162" height="34" rx="6" fill="#fb7185" stroke="#121212" stroke-width="3"/>
-    <text x="12" y="22" font-size="11" font-weight="900" fill="#121212" letter-spacing="0.5">03 // BREAK IT</text>
-    <circle cx="145" cy="17" r="4" fill="#121212"/>
-    <text x="12" y="58" font-size="16" font-weight="900" fill="#121212">STRESS TEST</text>
-    <text x="12" y="74" font-size="10" font-weight="700" fill="#be123c">PUSH BOUNDARIES</text>
-    <line x1="12" y1="84" x2="150" y2="84" stroke="#121212" stroke-width="1.5" stroke-dasharray="3,3"/>
-    <text x="12" y="104" font-size="10.5" font-weight="600" fill="#374151">• Rate limit triggers</text>
-    <text x="12" y="122" font-size="10.5" font-weight="600" fill="#374151">• Malformed inputs</text>
-    <text x="12" y="140" font-size="10.5" font-weight="600" fill="#374151">• "If it didn't break,</text>
-    <text x="12" y="152" font-size="9.5" font-weight="600" fill="#be123c">  you didn't push."</text>
-    <rect x="12" y="158" width="138" height="24" rx="4" fill="#ffffff" stroke="#121212" stroke-width="2"/>
-    <text x="22" y="174" font-size="9.5" font-weight="800" fill="#121212">FAILURE IS INTEL ✓</text>
+  <!-- Step 3: BUILD -->
+  <g transform="translate(376, 10)">
+    <rect x="0" y="0" width="158" height="155" rx="8" fill="#181920" stroke="#121212" stroke-width="3" filter="url(#build-shadow)"/>
+    <rect x="0" y="0" width="158" height="32" rx="6" fill="#3b82f6" stroke="#121212" stroke-width="3"/>
+    <text x="10" y="21" font-size="11" font-weight="900" fill="#ffffff">03 // BUILD</text>
+    <text x="12" y="58" font-size="15" font-weight="900" fill="#ffffff">TURN IDEA</text>
+    <text x="12" y="74" font-size="10" font-weight="700" fill="#60a5fa">INTO SOFTWARE</text>
+    <line x1="12" y1="84" x2="146" y2="84" stroke="#2d3139" stroke-width="1"/>
+    <text x="12" y="106" font-size="10.5" font-weight="500" fill="#9ca3af">Ship clean, full-stack</text>
+    <text x="12" y="122" font-size="10.5" font-weight="500" fill="#9ca3af">code with modern</text>
+    <text x="12" y="138" font-size="10.5" font-weight="500" fill="#9ca3af">frameworks &amp; storage.</text>
   </g>
 
   <!-- Arrow 3 -->
-  <g transform="translate(548, 92)">
-    <circle cx="9" cy="9" r="14" fill="#121212"/>
-    <path d="M5 9 L13 9 M10 6 L13 9 L10 12" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <g transform="translate(539, 75)">
+    <circle cx="8" cy="8" r="12" fill="#121212"/>
+    <path d="M4 8 L12 8 M9 5 L12 8 L9 11" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
   </g>
 
-  <!-- Step 4: DEBUG -->
-  <g transform="translate(568, 10)">
-    <rect x="0" y="0" width="162" height="195" rx="8" fill="#f5f3ff" stroke="#121212" stroke-width="3" filter="url(#neo-shadow)"/>
-    <rect x="0" y="0" width="162" height="34" rx="6" fill="#a78bfa" stroke="#121212" stroke-width="3"/>
-    <text x="12" y="22" font-size="11" font-weight="900" fill="#121212" letter-spacing="0.5">04 // DEBUG</text>
-    <circle cx="145" cy="17" r="4" fill="#121212"/>
-    <text x="12" y="58" font-size="16" font-weight="900" fill="#121212">TRACE ROOT</text>
-    <text x="12" y="74" font-size="10" font-weight="700" fill="#6d28d9">SYSTEM HARDENING</text>
-    <line x1="12" y1="84" x2="150" y2="84" stroke="#121212" stroke-width="1.5" stroke-dasharray="3,3"/>
-    <text x="12" y="104" font-size="10.5" font-weight="600" fill="#374151">• Exponential backoff</text>
-    <text x="12" y="122" font-size="10.5" font-weight="600" fill="#374151">• 420ms -> 38ms query</text>
-    <text x="12" y="140" font-size="10.5" font-weight="600" fill="#374151">• Zero bug ninja style</text>
-    <rect x="12" y="158" width="138" height="24" rx="4" fill="#ffffff" stroke="#121212" stroke-width="2"/>
-    <text x="22" y="174" font-size="9.5" font-weight="800" fill="#121212">TESTS PASSING ✓</text>
+  <!-- Step 4: BREAK -->
+  <g transform="translate(559, 10)">
+    <rect x="0" y="0" width="158" height="155" rx="8" fill="#181920" stroke="#121212" stroke-width="3" filter="url(#build-shadow)"/>
+    <rect x="0" y="0" width="158" height="32" rx="6" fill="#fb7185" stroke="#121212" stroke-width="3"/>
+    <text x="10" y="21" font-size="11" font-weight="900" fill="#121212">04 // BREAK</text>
+    <text x="12" y="58" font-size="15" font-weight="900" fill="#ffffff">TEST LIMITS</text>
+    <text x="12" y="74" font-size="10" font-weight="700" fill="#fb7185">&amp; FIX ROOT CAUSE</text>
+    <line x1="12" y1="84" x2="146" y2="84" stroke="#2d3139" stroke-width="1"/>
+    <text x="12" y="106" font-size="10.5" font-weight="500" fill="#9ca3af">Push edge cases,</text>
+    <text x="12" y="122" font-size="10.5" font-weight="500" fill="#9ca3af">find what fails, and</text>
+    <text x="12" y="138" font-size="10.5" font-weight="500" fill="#9ca3af">harden against bugs.</text>
   </g>
 
   <!-- Arrow 4 -->
-  <g transform="translate(734, 92)">
-    <circle cx="9" cy="9" r="14" fill="#121212"/>
-    <path d="M5 9 L13 9 M10 6 L13 9 L10 12" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <g transform="translate(722, 75)">
+    <circle cx="8" cy="8" r="12" fill="#121212"/>
+    <path d="M4 8 L12 8 M9 5 L12 8 L9 11" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
   </g>
 
   <!-- Step 5: SHIP -->
-  <g transform="translate(754, 10)">
-    <rect x="0" y="0" width="156" height="195" rx="8" fill="#f0fdf4" stroke="#121212" stroke-width="3" filter="url(#neo-shadow)"/>
-    <rect x="0" y="0" width="156" height="34" rx="6" fill="#4ade80" stroke="#121212" stroke-width="3"/>
-    <text x="12" y="22" font-size="11" font-weight="900" fill="#121212" letter-spacing="0.5">05 // SHIP &amp; SCALE</text>
-    <circle cx="138" cy="17" r="4" fill="#121212"/>
-    <text x="12" y="58" font-size="16" font-weight="900" fill="#121212">PROD ADOPTION</text>
-    <text x="12" y="74" font-size="10" font-weight="700" fill="#15803d">SOFTWARE THAT WORKS</text>
-    <line x1="12" y1="84" x2="144" y2="84" stroke="#121212" stroke-width="1.5" stroke-dasharray="3,3"/>
-    <text x="12" y="104" font-size="10.5" font-weight="600" fill="#374151">• Vercel + AWS S3</text>
-    <text x="12" y="122" font-size="10.5" font-weight="600" fill="#374151">• Cloudflare R2 presign</text>
-    <text x="12" y="140" font-size="10.5" font-weight="600" fill="#374151">• SVCE IT Dept adopted</text>
-    <rect x="12" y="158" width="132" height="24" rx="4" fill="#ffffff" stroke="#121212" stroke-width="2"/>
-    <text x="20" y="174" font-size="9.5" font-weight="800" fill="#121212">SHIPPED TO LIVE 🚀</text>
+  <g transform="translate(742, 10)">
+    <rect x="0" y="0" width="168" height="155" rx="8" fill="#181920" stroke="#121212" stroke-width="3" filter="url(#build-shadow)"/>
+    <rect x="0" y="0" width="168" height="32" rx="6" fill="#4ade80" stroke="#121212" stroke-width="3"/>
+    <text x="10" y="21" font-size="11" font-weight="900" fill="#121212">05 // SHIP</text>
+    <text x="12" y="58" font-size="15" font-weight="900" fill="#ffffff">DEPLOY TO</text>
+    <text x="12" y="74" font-size="10" font-weight="700" fill="#4ade80">REAL USERS</text>
+    <line x1="12" y1="84" x2="156" y2="84" stroke="#2d3139" stroke-width="1"/>
+    <text x="12" y="106" font-size="10.5" font-weight="500" fill="#9ca3af">Release to production,</text>
+    <text x="12" y="122" font-size="10.5" font-weight="500" fill="#9ca3af">monitor performance,</text>
+    <text x="12" y="138" font-size="10.5" font-weight="500" fill="#9ca3af">and iterate fast.</text>
   </g>
 </svg>

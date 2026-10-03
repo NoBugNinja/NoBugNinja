@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 220" width="100%" height="auto" style="max-width: 440px; font-family: -apple-system, BlinkMacSystemFont, Consolas, 'Segoe UI', monospace;">
+  <defs>
+    <filter id="p-shadow" x="0%" y="0%" width="120%" height="120%">
+      <feDropShadow dx="3" dy="3" stdDeviation="0" flood-color="#121212" flood-opacity="1"/>
+    </filter>
+  </defs>
+
+  <g transform="translate(6, 6)">
+    <rect x="0" y="0" width="424" height="204" rx="8" fill="#15171e" stroke="#121212" stroke-width="3" filter="url(#p-shadow)"/>
+    <!-- Titlebar -->
+    <rect x="0" y="0" width="424" height="30" rx="6" fill="#fb7185" stroke="#121212" stroke-width="3"/>
+    <circle cx="14" cy="15" r="4.5" fill="#fde047" stroke="#121212" stroke-width="1"/>
+    <circle cx="28" cy="15" r="4.5" fill="#3b82f6" stroke="#121212" stroke-width="1"/>
+    <circle cx="42" cy="15" r="4.5" fill="#4ade80" stroke="#121212" stroke-width="1"/>
+    <text x="60" y="20" font-size="11" font-weight="900" fill="#121212" letter-spacing="0.5">QUIETDEMAND // STARTUP VALIDATION</text>
+    <rect x="330" y="5" width="82" height="20" rx="4" fill="#121212"/>
+    <text x="339" y="19" font-size="9" font-weight="800" fill="#4ade80">● SSE STREAM</text>
+
+    <!-- Mini UI Mockup -->
+    <g transform="translate(14, 42)">
+      <rect x="0" y="0" width="396" height="88" rx="6" fill="#1c1e27" stroke="#2e3240" stroke-width="1.5"/>
+      <g transform="translate(12, 10)">
+        <text x="0" y="12" font-size="9" font-weight="800" fill="#fb7185">TARGET: r/SaaS • r/startups</text>
+        <rect x="0" y="20" width="180" height="14" rx="3" fill="#282a36"/>
+        <rect x="0" y="20" width="138" height="14" rx="3" fill="#fb7185"/>
+        <text x="6" y="31" font-size="8.5" font-weight="900" fill="#121212">PAIN INTENSITY: 76% HIGH</text>
+        <text x="0" y="54" font-size="9" font-weight="700" fill="#9ca3af">Scraped 340+ threads via Playwright</text>
+        <text x="0" y="68" font-size="9" font-weight="700" fill="#4ade80">Gemini JSON: TAM $3.8M verified</text>
+      </g>
+      <g transform="translate(210, 10)">
+        <rect x="0" y="0" width="176" height="66" rx="4" fill="#242735" stroke="#3d4255" stroke-width="1"/>
+        <text x="10" y="18" font-size="9" font-weight="800" fill="#fde047">PURCHASE INTENT</text>
+        <text x="10" y="38" font-size="16" font-weight="900" fill="#ffffff">84.2% <tspan font-size="10" fill="#4ade80">STRONG</tspan></text>
+        <text x="10" y="54" font-size="8.5" font-weight="600" fill="#9ca3af">Streaming inference live...</text>
+      </g>
+    </g>
+
+    <!-- Description & Stack -->
+    <text x="14" y="150" font-size="11.5" font-weight="700" fill="#ffffff">Autonomous startup idea validation SaaS analyzing Reddit buyer signals.</text>
+    <g transform="translate(14, 166)">
+      <rect x="0" y="0" width="56" height="20" rx="3" fill="#232630" stroke="#374151" stroke-width="1"/>
+      <text x="6" y="14" font-size="8.5" font-weight="800" fill="#e5e7eb">Next.js</text>
+      <rect x="62" y="0" width="68" height="20" rx="3" fill="#232630" stroke="#374151" stroke-width="1"/>
+      <text x="68" y="14" font-size="8.5" font-weight="800" fill="#e5e7eb">Playwright</text>
+      <rect x="136" y="0" width="56" height="20" rx="3" fill="#232630" stroke="#374151" stroke-width="1"/>
+      <text x="142" y="14" font-size="8.5" font-weight="800" fill="#e5e7eb">Gemini</text>
+      <rect x="198" y="0" width="46" height="20" rx="3" fill="#232630" stroke="#374151" stroke-width="1"/>
+      <text x="204" y="14" font-size="8.5" font-weight="800" fill="#e5e7eb">SSE</text>
+      <rect x="315" y="0" width="95" height="20" rx="4" fill="#fb7185" stroke="#121212" stroke-width="1.5"/>
+      <text x="323" y="14" font-size="8.5" font-weight="900" fill="#121212">EXPLORE REPO ↗</text>
+    </g>
+  </g>
+</svg>
