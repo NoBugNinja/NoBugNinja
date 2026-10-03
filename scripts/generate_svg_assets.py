@@ -1,54 +1,5 @@
 import os
 
-def create_system_status_svg(filepath):
-    svg_content = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 120" width="100%" height="auto" style="max-width: 920px; font-family: -apple-system, BlinkMacSystemFont, Consolas, 'Courier New', monospace;">
-  <defs>
-    <filter id="tele-shadow" x="0%" y="0%" width="120%" height="120%">
-      <feDropShadow dx="4" dy="4" stdDeviation="0" flood-color="#121212" flood-opacity="1"/>
-    </filter>
-  </defs>
-
-  <g transform="translate(6, 6)">
-    <!-- Shadow & Body -->
-    <rect x="0" y="0" width="904" height="104" rx="8" fill="#121216" stroke="#121212" stroke-width="3" filter="url(#tele-shadow)"/>
-    
-    <!-- Top Bar -->
-    <rect x="0" y="0" width="904" height="28" rx="6" fill="#fde047" stroke="#121212" stroke-width="3"/>
-    <circle cx="16" cy="14" r="5" fill="#fb7185" stroke="#121212" stroke-width="1.5"/>
-    <circle cx="32" cy="14" r="5" fill="#a78bfa" stroke="#121212" stroke-width="1.5"/>
-    <circle cx="48" cy="14" r="5" fill="#4ade80" stroke="#121212" stroke-width="1.5"/>
-    <text x="68" y="19" font-size="11" font-weight="900" fill="#121212" letter-spacing="1">SYSTEM TELEMETRY // MOHAMMED SHAFIQ S (NoBugNinja)</text>
-    <rect x="740" y="4" width="150" height="20" rx="4" fill="#121212"/>
-    <circle cx="754" cy="14" r="3.5" fill="#4ade80"/>
-    <text x="764" y="18" font-size="10" font-weight="800" fill="#4ade80">● ONLINE // ACTIVE</text>
-
-    <!-- Content 3 Columns -->
-    <g transform="translate(18, 42)">
-      <rect x="0" y="0" width="270" height="52" rx="4" fill="#1e1f26" stroke="#374151" stroke-width="1.5"/>
-      <text x="12" y="20" font-size="10" font-weight="800" fill="#fde047" letter-spacing="0.5">CURRENT STATUS</text>
-      <text x="12" y="38" font-size="12" font-weight="700" fill="#ffffff">Available for 2026 Roles</text>
-      <circle cx="250" cy="26" r="4" fill="#4ade80"/>
-    </g>
-
-    <g transform="translate(304, 42)">
-      <rect x="0" y="0" width="280" height="52" rx="4" fill="#1e1f26" stroke="#374151" stroke-width="1.5"/>
-      <text x="12" y="20" font-size="10" font-weight="800" fill="#ff90e8" letter-spacing="0.5">ACTIVE LEARNING TRACK</text>
-      <text x="12" y="38" font-size="12" font-weight="700" fill="#ffffff">AWS Solutions Architect Cert</text>
-      <circle cx="260" cy="26" r="4" fill="#ff90e8"/>
-    </g>
-
-    <g transform="translate(600, 42)">
-      <rect x="0" y="0" width="286" height="52" rx="4" fill="#1e1f26" stroke="#374151" stroke-width="1.5"/>
-      <text x="12" y="20" font-size="10" font-weight="800" fill="#4ade80" letter-spacing="0.5">KEY ADOPTION MILESTONE</text>
-      <text x="12" y="38" font-size="12" font-weight="700" fill="#ffffff">LeetBoard (Faculty &amp; Dept Adopted)</text>
-      <circle cx="266" cy="26" r="4" fill="#fde047"/>
-    </g>
-  </g>
-</svg>"""
-    with open(filepath, "w", encoding="utf-8") as f:
-        f.write(svg_content.strip())
-    print(f"Created {filepath}")
-
 def create_exploring_cards_svg(filepath):
     svg_content = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 180" width="100%" height="auto" style="max-width: 920px; font-family: -apple-system, BlinkMacSystemFont, Consolas, 'Segoe UI', monospace;">
   <defs>
@@ -248,7 +199,6 @@ def create_project_leetboard_svg(filepath):
 
   <g transform="translate(6, 6)">
     <rect x="0" y="0" width="424" height="204" rx="8" fill="#15171e" stroke="#121212" stroke-width="3" filter="url(#p-shadow)"/>
-    <!-- Titlebar -->
     <rect x="0" y="0" width="424" height="30" rx="6" fill="#3b82f6" stroke="#121212" stroke-width="3"/>
     <circle cx="14" cy="15" r="4.5" fill="#fb7185" stroke="#121212" stroke-width="1"/>
     <circle cx="28" cy="15" r="4.5" fill="#fde047" stroke="#121212" stroke-width="1"/>
@@ -257,16 +207,14 @@ def create_project_leetboard_svg(filepath):
     <rect x="325" y="5" width="88" height="20" rx="4" fill="#121212"/>
     <text x="333" y="19" font-size="9" font-weight="800" fill="#fde047">● DEPT ADOPTED</text>
 
-    <!-- Mini UI Mockup inside card -->
+    <!-- Mini UI Mockup -->
     <g transform="translate(14, 42)">
       <rect x="0" y="0" width="396" height="88" rx="6" fill="#1c1e27" stroke="#2e3240" stroke-width="1.5"/>
-      <!-- Metric pills -->
       <g transform="translate(10, 10)">
         <text x="0" y="12" font-size="9" font-weight="800" fill="#9ca3af">CONTEST RATING TRACKER</text>
         <text x="0" y="32" font-size="18" font-weight="900" fill="#60a5fa">1,942 <tspan font-size="11" fill="#4ade80">▲ +128</tspan></text>
         <path d="M 0 52 Q 25 45, 50 48 T 100 36 T 150 28 T 200 18" fill="none" stroke="#3b82f6" stroke-width="2.5"/>
       </g>
-      <!-- Leaderboard Mock snippet -->
       <g transform="translate(230, 8)">
         <rect x="0" y="0" width="156" height="20" rx="3" fill="#252834"/>
         <text x="8" y="14" font-size="9" font-weight="800" fill="#fde047">#1 @karthik_s</text>
@@ -280,7 +228,6 @@ def create_project_leetboard_svg(filepath):
       </g>
     </g>
 
-    <!-- Description & Stack -->
     <text x="14" y="150" font-size="11.5" font-weight="700" fill="#ffffff">Automated competitive programming analytics tracking daily contest metrics.</text>
     <g transform="translate(14, 166)">
       <rect x="0" y="0" width="56" height="20" rx="3" fill="#232630" stroke="#374151" stroke-width="1"/>
@@ -310,7 +257,6 @@ def create_project_quietdemand_svg(filepath):
 
   <g transform="translate(6, 6)">
     <rect x="0" y="0" width="424" height="204" rx="8" fill="#15171e" stroke="#121212" stroke-width="3" filter="url(#p-shadow)"/>
-    <!-- Titlebar -->
     <rect x="0" y="0" width="424" height="30" rx="6" fill="#fb7185" stroke="#121212" stroke-width="3"/>
     <circle cx="14" cy="15" r="4.5" fill="#fde047" stroke="#121212" stroke-width="1"/>
     <circle cx="28" cy="15" r="4.5" fill="#3b82f6" stroke="#121212" stroke-width="1"/>
@@ -338,7 +284,6 @@ def create_project_quietdemand_svg(filepath):
       </g>
     </g>
 
-    <!-- Description & Stack -->
     <text x="14" y="150" font-size="11.5" font-weight="700" fill="#ffffff">Autonomous startup idea validation SaaS analyzing Reddit buyer signals.</text>
     <g transform="translate(14, 166)">
       <rect x="0" y="0" width="56" height="20" rx="3" fill="#232630" stroke="#374151" stroke-width="1"/>
@@ -368,7 +313,6 @@ def create_project_skillsync_svg(filepath):
 
   <g transform="translate(6, 6)">
     <rect x="0" y="0" width="424" height="204" rx="8" fill="#15171e" stroke="#121212" stroke-width="3" filter="url(#p-shadow)"/>
-    <!-- Titlebar -->
     <rect x="0" y="0" width="424" height="30" rx="6" fill="#fde047" stroke="#121212" stroke-width="3"/>
     <circle cx="14" cy="15" r="4.5" fill="#fb7185" stroke="#121212" stroke-width="1"/>
     <circle cx="28" cy="15" r="4.5" fill="#a78bfa" stroke="#121212" stroke-width="1"/>
@@ -399,7 +343,6 @@ def create_project_skillsync_svg(filepath):
       </g>
     </g>
 
-    <!-- Description & Stack -->
     <text x="14" y="150" font-size="11.5" font-weight="700" fill="#ffffff">NLP-powered resume screening platform with weighted candidate matching.</text>
     <g transform="translate(14, 166)">
       <rect x="0" y="0" width="56" height="20" rx="3" fill="#232630" stroke="#374151" stroke-width="1"/>
@@ -429,7 +372,6 @@ def create_project_opportunityos_svg(filepath):
 
   <g transform="translate(6, 6)">
     <rect x="0" y="0" width="424" height="204" rx="8" fill="#15171e" stroke="#121212" stroke-width="3" filter="url(#p-shadow)"/>
-    <!-- Titlebar -->
     <rect x="0" y="0" width="424" height="30" rx="6" fill="#a78bfa" stroke="#121212" stroke-width="3"/>
     <circle cx="14" cy="15" r="4.5" fill="#fb7185" stroke="#121212" stroke-width="1"/>
     <circle cx="28" cy="15" r="4.5" fill="#fde047" stroke="#121212" stroke-width="1"/>
@@ -460,7 +402,6 @@ def create_project_opportunityos_svg(filepath):
       </g>
     </g>
 
-    <!-- Description & Stack -->
     <text x="14" y="150" font-size="11.5" font-weight="700" fill="#ffffff">Full-stack career automation platform with AI resume roasting &amp; matching.</text>
     <g transform="translate(14, 166)">
       <rect x="0" y="0" width="62" height="20" rx="3" fill="#232630" stroke="#374151" stroke-width="1"/>
@@ -481,7 +422,7 @@ def create_project_opportunityos_svg(filepath):
     print(f"Created {filepath}")
 
 def create_tech_toolbox_svg(filepath):
-    svg_content = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 200" width="100%" height="auto" style="max-width: 920px; font-family: -apple-system, BlinkMacSystemFont, Consolas, 'Segoe UI', monospace;">
+    svg_content = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 236" width="100%" height="auto" style="max-width: 920px; font-family: -apple-system, BlinkMacSystemFont, Consolas, 'Segoe UI', monospace;">
   <defs>
     <filter id="box-shadow" x="0%" y="0%" width="120%" height="120%">
       <feDropShadow dx="3.5" dy="3.5" stdDeviation="0" flood-color="#121212" flood-opacity="1"/>
@@ -490,88 +431,235 @@ def create_tech_toolbox_svg(filepath):
 
   <g transform="translate(6, 6)">
     <!-- Container Body -->
-    <rect x="0" y="0" width="904" height="184" rx="8" fill="#121318" stroke="#121212" stroke-width="3" filter="url(#box-shadow)"/>
+    <rect x="0" y="0" width="904" height="220" rx="8" fill="#121318" stroke="#121212" stroke-width="3" filter="url(#box-shadow)"/>
     
     <!-- Top Bar -->
-    <rect x="0" y="0" width="904" height="28" rx="6" fill="#ff90e8" stroke="#121212" stroke-width="3"/>
+    <rect x="0" y="0" width="904" height="28" rx="6" fill="#fde047" stroke="#121212" stroke-width="3"/>
     <circle cx="16" cy="14" r="4.5" fill="#fb7185" stroke="#121212" stroke-width="1.5"/>
-    <circle cx="32" cy="14" r="4.5" fill="#fde047" stroke="#121212" stroke-width="1.5"/>
+    <circle cx="32" cy="14" r="4.5" fill="#3b82f6" stroke="#121212" stroke-width="1.5"/>
     <circle cx="48" cy="14" r="4.5" fill="#4ade80" stroke="#121212" stroke-width="1.5"/>
     <text x="68" y="19" font-size="11" font-weight="900" fill="#121212" letter-spacing="1">DEVELOPER TOOLBOX // PRODUCTION STACK &amp; CAPABILITIES</text>
 
-    <!-- Tray 1: Languages -->
-    <g transform="translate(18, 38)">
-      <rect x="0" y="0" width="100" height="26" rx="4" fill="#fde047" stroke="#121212" stroke-width="2"/>
-      <text x="12" y="17" font-size="10" font-weight="900" fill="#121212">LANGUAGES</text>
-      <g transform="translate(112, 1)">
-        <rect x="0" y="0" width="76" height="24" rx="4" fill="#1f222c" stroke="#374151" stroke-width="1"/>
-        <text x="10" y="16" font-size="10" font-weight="700" fill="#fde047">JavaScript</text>
-        <rect x="84" y="0" width="78" height="24" rx="4" fill="#1f222c" stroke="#374151" stroke-width="1"/>
-        <text x="94" y="16" font-size="10" font-weight="700" fill="#60a5fa">TypeScript</text>
-        <rect x="170" y="0" width="46" height="24" rx="4" fill="#1f222c" stroke="#374151" stroke-width="1"/>
-        <text x="184" y="16" font-size="10" font-weight="700" fill="#e5e7eb">C</text>
-        <rect x="224" y="0" width="50" height="24" rx="4" fill="#1f222c" stroke="#374151" stroke-width="1"/>
-        <text x="236" y="16" font-size="10" font-weight="700" fill="#e5e7eb">C++</text>
-        <rect x="282" y="0" width="56" height="24" rx="4" fill="#1f222c" stroke="#374151" stroke-width="1"/>
-        <text x="294" y="16" font-size="10" font-weight="700" fill="#e5e7eb">Java</text>
-        <rect x="346" y="0" width="50" height="24" rx="4" fill="#1f222c" stroke="#374151" stroke-width="1"/>
-        <text x="358" y="16" font-size="10" font-weight="700" fill="#e5e7eb">SQL</text>
-        <rect x="404" y="0" width="80" height="24" rx="4" fill="#1f222c" stroke="#374151" stroke-width="1"/>
-        <text x="414" y="16" font-size="10" font-weight="700" fill="#e5e7eb">HTML/CSS</text>
+    <!-- ================= ROW 1: LANGUAGES ================= -->
+    <g transform="translate(18, 40)">
+      <rect x="0" y="0" width="102" height="28" rx="4" fill="#fde047" stroke="#121212" stroke-width="2"/>
+      <text x="11" y="18" font-size="10" font-weight="900" fill="#121212">LANGUAGES</text>
+      
+      <!-- JavaScript -->
+      <g transform="translate(114, 0)">
+        <rect x="0" y="0" width="112" height="28" rx="5" fill="#1a1c24" stroke="#2e3240" stroke-width="1.2"/>
+        <g transform="translate(8, 6)">
+          <rect width="16" height="16" rx="2" fill="#F7DF1E"/>
+          <path d="M4 11.5c.3.5.7.9 1.4.9.8 0 1.2-.4 1.2-1.3V5h1.6v6.1c0 1.7-1 2.5-2.6 2.5-1.4 0-2.3-.7-2.6-1.6l1-.5zm5.3.8c.4.3.9.5 1.5.5.9 0 1.4-.4 1.4-1 0-.6-.4-.9-1.3-1.3l-.5-.2c-1.3-.6-2-1.4-2-2.5 0-1.4 1.1-2.4 2.7-2.4 1 0 1.7.3 2.2.8l-.9 1.1c-.3-.3-.7-.5-1.3-.5-.7 0-1.1.4-1.1.9 0 .6.4.8 1.2 1.2l.5.2c1.4.6 2.2 1.4 2.2 2.6 0 1.6-1.2 2.5-2.9 2.5-1.2 0-2.1-.4-2.7-1l.9-1.2z" fill="#000000"/>
+        </g>
+        <text x="30" y="18" font-size="10.5" font-weight="700" fill="#fde047">JavaScript</text>
+      </g>
+
+      <!-- TypeScript -->
+      <g transform="translate(234, 0)">
+        <rect x="0" y="0" width="112" height="28" rx="5" fill="#1a1c24" stroke="#2e3240" stroke-width="1.2"/>
+        <g transform="translate(8, 6)">
+          <rect width="16" height="16" rx="2" fill="#3178C6"/>
+          <path d="M3.5 6.5h4v1.2H6.1v4.7H4.9V7.7H3.5V6.5zm5 3.5c.3.2.7.4 1.2.4.6 0 .9-.3.9-.7 0-.4-.3-.6-.8-.8l-.4-.2c-.9-.4-1.4-.9-1.4-1.7 0-1 .8-1.7 2-1.7.7 0 1.2.2 1.5.5l-.6.9c-.3-.2-.5-.3-.9-.3-.5 0-.8.3-.8.6 0 .4.3.6.8.8l.4.2c1 .4 1.5.9 1.5 1.7 0 1.1-.9 1.8-2.1 1.8-.8 0-1.5-.3-1.8-.7l.6-.9z" fill="#FFFFFF"/>
+        </g>
+        <text x="30" y="18" font-size="10.5" font-weight="700" fill="#60a5fa">TypeScript</text>
+      </g>
+
+      <!-- C++ -->
+      <g transform="translate(354, 0)">
+        <rect x="0" y="0" width="76" height="28" rx="5" fill="#1a1c24" stroke="#2e3240" stroke-width="1.2"/>
+        <g transform="translate(8, 6)">
+          <circle cx="8" cy="8" r="7.5" fill="#00599C"/>
+          <path d="M8 4.2a3.8 3.8 0 1 0 2.8 6.4l-1.1-.9A2.4 2.4 0 1 1 8 5.6c.9 0 1.6.4 2 1.1l1.1-.9A3.8 3.8 0 0 0 8 4.2z" fill="#FFFFFF"/>
+          <path d="M11.5 7.2h.8v-.8h.6v.8h.8v.6h-.8v.8h-.6v-.8h-.8v-.6zm2.4 0h.8v-.8h.6v.8h.8v.6h-.8v.8h-.6v-.8h-.8v-.6z" fill="#38BDF8"/>
+        </g>
+        <text x="30" y="18" font-size="10.5" font-weight="700" fill="#e5e7eb">C++</text>
+      </g>
+
+      <!-- Java -->
+      <g transform="translate(438, 0)">
+        <rect x="0" y="0" width="80" height="28" rx="5" fill="#1a1c24" stroke="#2e3240" stroke-width="1.2"/>
+        <g transform="translate(8, 6)">
+          <circle cx="8" cy="8" r="7.5" fill="#292d3e"/>
+          <path d="M6.2 13.2c1.8.1 3.5-.3 4.8-1 .3-.2.6-.4.4-.6-.2-.2-.5-.1-.7 0-1.1.6-2.5.9-4 .8-1.2-.1-2.2-.4-2.4-.7-.2-.2-.2-.5.1-.6 1.4-.6 3.4-.7 5.2-.4 1.9.3 3.3 1.1 3.4 2 .2 1.2-1.5 2.1-4 2.3-1.7.1-3.2-.2-4.1-.7-.3-.2-.2-.5 0-.6.2-.1.6 0 1.3.1zm1.1-2.2c1.2.1 2.4-.2 3.3-.6.3-.1.5-.3.4-.5s-.4-.1-.6 0c-.8.4-1.7.6-2.8.5-.9-.1-1.6-.3-1.7-.5-.1-.2-.1-.4.1-.4 1-.4 2.4-.5 3.6-.3 1.3.2 2.3.8 2.4 1.4.1.8-1 1.5-2.8 1.6-1.2.1-2.2-.1-2.9-.5-.2-.1-.2-.4 0-.5.2-.1.4-.2.9-.2zm-.8-3.4c.5.8 1.4 1.3 2.5 1.5.3 0 .4-.2.3-.4-.2-.2-.5-.4-.8-.6-.6-.4-1.1-1-1.3-1.7-.1-.5 0-1 .2-1.5.1-.2 0-.3-.2-.3-.2 0-.3.2-.4.4-.4.8-.5 1.8-.3 2.6zm3.1-4c-.1.6-.4 1.1-.8 1.6-.2.2-.1.4.1.4.2 0 .4-.1.6-.3.6-.6 1-1.3 1.1-2.1 0-.3-.1-.6-.3-.8-.1-.1-.3 0-.4.1-.2.3-.3.7-.3 1.1z" fill="#EA2D2E"/>
+        </g>
+        <text x="30" y="18" font-size="10.5" font-weight="700" fill="#e5e7eb">Java</text>
+      </g>
+
+      <!-- SQL -->
+      <g transform="translate(526, 0)">
+        <rect x="0" y="0" width="76" height="28" rx="5" fill="#1a1c24" stroke="#2e3240" stroke-width="1.2"/>
+        <g transform="translate(8, 6)">
+          <ellipse cx="8" cy="4" rx="6" ry="2.2" fill="#00BCF2"/>
+          <path d="M2 4v3.5c0 1.2 2.7 2.2 6 2.2s6-1 6-2.2V4" fill="none" stroke="#00BCF2" stroke-width="1.2"/>
+          <path d="M2 7.5V11c0 1.2 2.7 2.2 6 2.2s6-1 6-2.2V7.5" fill="none" stroke="#00BCF2" stroke-width="1.2"/>
+        </g>
+        <text x="30" y="18" font-size="10.5" font-weight="700" fill="#00BCF2">SQL</text>
       </g>
     </g>
 
-    <!-- Tray 2: Build -->
-    <g transform="translate(18, 72)">
-      <rect x="0" y="0" width="100" height="26" rx="4" fill="#ff90e8" stroke="#121212" stroke-width="2"/>
-      <text x="12" y="17" font-size="10" font-weight="900" fill="#121212">BUILD WITH</text>
-      <g transform="translate(112, 1)">
-        <rect x="0" y="0" width="76" height="24" rx="4" fill="#1f222c" stroke="#ff90e8" stroke-width="1.5"/>
-        <text x="10" y="16" font-size="10" font-weight="800" fill="#ff90e8">Next.js 16</text>
-        <rect x="84" y="0" width="70" height="24" rx="4" fill="#1f222c" stroke="#374151" stroke-width="1"/>
-        <text x="94" y="16" font-size="10" font-weight="700" fill="#60a5fa">React 19</text>
-        <rect x="162" y="0" width="66" height="24" rx="4" fill="#1f222c" stroke="#374151" stroke-width="1"/>
-        <text x="172" y="16" font-size="10" font-weight="700" fill="#4ade80">Node.js</text>
-        <rect x="236" y="0" width="64" height="24" rx="4" fill="#1f222c" stroke="#374151" stroke-width="1"/>
-        <text x="246" y="16" font-size="10" font-weight="700" fill="#e5e7eb">Express</text>
-        <rect x="308" y="0" width="86" height="24" rx="4" fill="#1f222c" stroke="#374151" stroke-width="1"/>
-        <text x="318" y="16" font-size="10" font-weight="700" fill="#38bdf8">Tailwind CSS</text>
-        <rect x="402" y="0" width="62" height="24" rx="4" fill="#1f222c" stroke="#374151" stroke-width="1"/>
-        <text x="412" y="16" font-size="10" font-weight="700" fill="#38bdf8">Flutter</text>
-        <rect x="472" y="0" width="82" height="24" rx="4" fill="#1f222c" stroke="#374151" stroke-width="1"/>
-        <text x="482" y="16" font-size="10" font-weight="700" fill="#4ade80">Playwright</text>
+    <!-- ================= ROW 2: BUILD ================= -->
+    <g transform="translate(18, 82)">
+      <rect x="0" y="0" width="102" height="28" rx="4" fill="#ff90e8" stroke="#121212" stroke-width="2"/>
+      <text x="17" y="18" font-size="10" font-weight="900" fill="#121212">BUILD</text>
+
+      <!-- React -->
+      <g transform="translate(114, 0)">
+        <rect x="0" y="0" width="88" height="28" rx="5" fill="#1a1c24" stroke="#2e3240" stroke-width="1.2"/>
+        <g transform="translate(8, 6)">
+          <circle cx="8" cy="8" r="1.6" fill="#61DAFB"/>
+          <ellipse cx="8" cy="8" rx="7.2" ry="2.6" fill="none" stroke="#61DAFB" stroke-width="1.1"/>
+          <ellipse cx="8" cy="8" rx="7.2" ry="2.6" transform="rotate(60 8 8)" fill="none" stroke="#61DAFB" stroke-width="1.1"/>
+          <ellipse cx="8" cy="8" rx="7.2" ry="2.6" transform="rotate(120 8 8)" fill="none" stroke="#61DAFB" stroke-width="1.1"/>
+        </g>
+        <text x="30" y="18" font-size="10.5" font-weight="700" fill="#61DAFB">React</text>
+      </g>
+
+      <!-- Next.js -->
+      <g transform="translate(210, 0)">
+        <rect x="0" y="0" width="94" height="28" rx="5" fill="#1a1c24" stroke="#ff90e8" stroke-width="1.2"/>
+        <g transform="translate(8, 6)">
+          <circle cx="8" cy="8" r="7.5" fill="#000000" stroke="#FFFFFF" stroke-width="0.8"/>
+          <path d="M10.8 11.2 6 5.5h-.9v5.7h1.1V7.2l4.1 4.9c.2-.3.4-.6.6-.9zM10.8 5.5h-1.1v3.2l1.1 1.3V5.5z" fill="#FFFFFF"/>
+        </g>
+        <text x="30" y="18" font-size="10.5" font-weight="800" fill="#ff90e8">Next.js</text>
+      </g>
+
+      <!-- Node.js -->
+      <g transform="translate(312, 0)">
+        <rect x="0" y="0" width="94" height="28" rx="5" fill="#1a1c24" stroke="#2e3240" stroke-width="1.2"/>
+        <g transform="translate(8, 6)">
+          <path d="M8 1.5 14 5v6l-6 3.5L2 11V5l6-3.5z" fill="#339933"/>
+          <path d="M8 5a3 3 0 0 0-3 3v1a3 3 0 0 0 6 0V8a3 3 0 0 0-3-3zm1.6 4a1.6 1.6 0 0 1-3.2 0V8a1.6 1.6 0 0 1 3.2 0v1z" fill="#FFFFFF"/>
+        </g>
+        <text x="30" y="18" font-size="10.5" font-weight="700" fill="#4ade80">Node.js</text>
+      </g>
+
+      <!-- Express -->
+      <g transform="translate(414, 0)">
+        <rect x="0" y="0" width="96" height="28" rx="5" fill="#1a1c24" stroke="#2e3240" stroke-width="1.2"/>
+        <g transform="translate(8, 6)">
+          <circle cx="8" cy="8" r="7.5" fill="#2b2d38"/>
+          <text x="3.5" y="11" font-size="8.5" font-weight="900" fill="#FFFFFF" font-family="sans-serif">ex</text>
+        </g>
+        <text x="30" y="18" font-size="10.5" font-weight="700" fill="#e5e7eb">Express</text>
+      </g>
+
+      <!-- Tailwind CSS -->
+      <g transform="translate(518, 0)">
+        <rect x="0" y="0" width="112" height="28" rx="5" fill="#1a1c24" stroke="#2e3240" stroke-width="1.2"/>
+        <g transform="translate(8, 6)">
+          <path d="M8 4.2c-2.4 0-3.9 1.2-4.5 3.6 1-.9 2-.9 2.7-.4.6.4 1 1 1.7 1.7 1.1 1.1 2.3 2.4 5.1 2.4 2.4 0 3.9-1.2 4.5-3.6-1 .9-2 .9-2.7.4-.6-.4-1-1-1.7-1.7-1.1-1.1-2.4-2.4-5.1-2.4zm-4.5 5.3c-2.4 0-3.9 1.2-4.5 3.6 1-.9 2-.9 2.7-.4.6.4 1 1 1.7 1.7 1.1 1.1 2.4 2.4 5.1 2.4 2.4 0 3.9-1.2 4.5-3.6-1 .9-2 .9-2.7.4-.6-.4-1-1-1.7-1.7-1.1-1.1-2.4-2.4-5.1-2.4z" fill="#38BDF8"/>
+        </g>
+        <text x="30" y="18" font-size="10.5" font-weight="700" fill="#38BDF8">Tailwind CSS</text>
+      </g>
+
+      <!-- Flutter -->
+      <g transform="translate(638, 0)">
+        <rect x="0" y="0" width="92" height="28" rx="5" fill="#1a1c24" stroke="#2e3240" stroke-width="1.2"/>
+        <g transform="translate(8, 6)">
+          <path d="M8.8 1.5 3.2 7.1l1.8 1.8L12.4 1.5H8.8zm-.2 5.5L4.8 10.8l3.8 3.7h3.6L8.4 10.8l3.8-3.8H8.6z" fill="#54C5F8"/>
+          <path d="M6.2 12.2 4.8 10.8 3.2 12.4l2.1 2.1h3.6l-2.7-2.3z" fill="#02569B"/>
+        </g>
+        <text x="30" y="18" font-size="10.5" font-weight="700" fill="#54C5F8">Flutter</text>
       </g>
     </g>
 
-    <!-- Tray 3: Data -->
-    <g transform="translate(18, 106)">
-      <rect x="0" y="0" width="100" height="26" rx="4" fill="#3b82f6" stroke="#121212" stroke-width="2"/>
-      <text x="12" y="17" font-size="10" font-weight="900" fill="#ffffff">DATABASES</text>
-      <g transform="translate(112, 1)">
-        <rect x="0" y="0" width="138" height="24" rx="4" fill="#1f222c" stroke="#3b82f6" stroke-width="1.5"/>
-        <text x="10" y="16" font-size="10" font-weight="800" fill="#60a5fa">PostgreSQL (Supabase)</text>
-        <rect x="146" y="0" width="60" height="24" rx="4" fill="#1f222c" stroke="#374151" stroke-width="1"/>
-        <text x="156" y="16" font-size="10" font-weight="700" fill="#e5e7eb">MySQL</text>
-        <rect x="214" y="0" width="76" height="24" rx="4" fill="#1f222c" stroke="#374151" stroke-width="1"/>
-        <text x="224" y="16" font-size="10" font-weight="700" fill="#4ade80">MongoDB</text>
-        <rect x="298" y="0" width="56" height="24" rx="4" fill="#1f222c" stroke="#374151" stroke-width="1"/>
-        <text x="308" y="16" font-size="10" font-weight="700" fill="#fb7185">Redis</text>
+    <!-- ================= ROW 3: DATA ================= -->
+    <g transform="translate(18, 124)">
+      <rect x="0" y="0" width="102" height="28" rx="4" fill="#3b82f6" stroke="#121212" stroke-width="2"/>
+      <text x="21" y="18" font-size="10" font-weight="900" fill="#ffffff">DATA</text>
+
+      <!-- PostgreSQL -->
+      <g transform="translate(114, 0)">
+        <rect x="0" y="0" width="118" height="28" rx="5" fill="#1a1c24" stroke="#2e3240" stroke-width="1.2"/>
+        <g transform="translate(8, 6)">
+          <circle cx="8" cy="8" r="7.5" fill="#202a3a"/>
+          <path d="M8 2.2C5.3 2.2 3.5 4 3.5 6.4c0 1.6.8 2.8 2.1 3.5-.2.5-.5 1-1 1.3l.8.8c.8-.4 1.3-1.1 1.6-1.8.7.2 1.4.3 2 .3 4.2 0 6.5-2.5 6.5-5.2 0-1.8-1.5-3.3-3.5-3.3zm0 1.2c1.4 0 2.4 1 2.4 2.2 0 1.7-1.7 3.5-4.2 3.5-.9 0-1.6-.3-1.9-.8-.4-.7-.2-1.8.7-2.6 1-.8 2-1.3 3-2.3z" fill="#336791"/>
+        </g>
+        <text x="30" y="18" font-size="10.5" font-weight="700" fill="#60a5fa">PostgreSQL</text>
+      </g>
+
+      <!-- MySQL -->
+      <g transform="translate(240, 0)">
+        <rect x="0" y="0" width="94" height="28" rx="5" fill="#1a1c24" stroke="#2e3240" stroke-width="1.2"/>
+        <g transform="translate(8, 6)">
+          <circle cx="8" cy="8" r="7.5" fill="#1f2c38"/>
+          <path d="M2.5 10.5C3.2 7 5.8 4 9 4c2.2 0 4 1.2 4.8 3 .4.9.4 2-.2 2.8-.7.9-1.8 1.2-3 1.2-1.2 0-2.3-.4-3.1-1.1-.3-.2-.5-.5-.6-.8-.2.8-.5 1.5-.9 2.1-.3.4-.6.8-1 1.1l-.8-.8c.7-.6 1.1-1.2 1.3-1.9z" fill="#00758F"/>
+          <circle cx="11.5" cy="5.8" r="0.8" fill="#F29111"/>
+        </g>
+        <text x="30" y="18" font-size="10.5" font-weight="700" fill="#e5e7eb">MySQL</text>
+      </g>
+
+      <!-- MongoDB -->
+      <g transform="translate(342, 0)">
+        <rect x="0" y="0" width="104" height="28" rx="5" fill="#1a1c24" stroke="#2e3240" stroke-width="1.2"/>
+        <g transform="translate(8, 6)">
+          <circle cx="8" cy="8" r="7.5" fill="#1b2e20"/>
+          <path d="M8 1.5s-.3.4-.7 1.2c-.8 1.5-2 3.5-2 5.6 0 2.5 1.8 4.7 3.9 5.2.4.1.8.1.8.1s.4 0 .8-.1c2.1-.5 3.9-2.7 3.9-5.2 0-2.1-1.2-4.1-2-5.6-.4-.8-.7-1.2-.7-1.2s-.3 1.2-.5 2.8c-.3 2.2-.4 3.7-.4 4.8h-.6c0-1.1-.1-2.6-.4-4.8-.2-1.6-.5-2.8-.5-2.8z" fill="#47A248"/>
+        </g>
+        <text x="30" y="18" font-size="10.5" font-weight="700" fill="#4ade80">MongoDB</text>
+      </g>
+
+      <!-- Redis -->
+      <g transform="translate(454, 0)">
+        <rect x="0" y="0" width="88" height="28" rx="5" fill="#1a1c24" stroke="#2e3240" stroke-width="1.2"/>
+        <g transform="translate(8, 6)">
+          <circle cx="8" cy="8" r="7.5" fill="#2b1a1c"/>
+          <path d="M8 2.2 1.8 5.4 8 8.6l6.2-3.2L8 2.2z" fill="#DC382D"/>
+          <path d="m1.8 7.5 6.2 3.2 6.2-3.2v1.5L8 12.2l-6.2-3.2V7.5z" fill="#A82820"/>
+          <path d="m1.8 10.5 6.2 3.2 6.2-3.2v1.5L8 15.2l-6.2-3.2v-1.5z" fill="#801C16"/>
+        </g>
+        <text x="30" y="18" font-size="10.5" font-weight="700" fill="#fb7185">Redis</text>
       </g>
     </g>
 
-    <!-- Tray 4: Cloud -->
-    <g transform="translate(18, 140)">
-      <rect x="0" y="0" width="100" height="26" rx="4" fill="#4ade80" stroke="#121212" stroke-width="2"/>
-      <text x="12" y="17" font-size="10" font-weight="900" fill="#121212">CLOUD &amp; INFRA</text>
-      <g transform="translate(112, 1)">
-        <rect x="0" y="0" width="176" height="24" rx="4" fill="#1f222c" stroke="#fde047" stroke-width="1.5"/>
-        <text x="10" y="16" font-size="10" font-weight="800" fill="#fde047">AWS (S3, EC2, Lambda, IAM)</text>
-        <rect x="184" y="0" width="106" height="24" rx="4" fill="#1f222c" stroke="#374151" stroke-width="1"/>
-        <text x="194" y="16" font-size="10" font-weight="700" fill="#fb923c">Cloudflare R2</text>
-        <rect x="298" y="0" width="60" height="24" rx="4" fill="#1f222c" stroke="#374151" stroke-width="1"/>
-        <text x="308" y="16" font-size="10" font-weight="700" fill="#e5e7eb">Vercel</text>
-        <rect x="366" y="0" width="112" height="24" rx="4" fill="#1f222c" stroke="#374151" stroke-width="1"/>
-        <text x="376" y="16" font-size="10" font-weight="700" fill="#60a5fa">GitHub Actions</text>
+    <!-- ================= ROW 4: CLOUD & INFRA ================= -->
+    <g transform="translate(18, 166)">
+      <rect x="0" y="0" width="102" height="28" rx="4" fill="#4ade80" stroke="#121212" stroke-width="2"/>
+      <text x="9" y="18" font-size="9.5" font-weight="900" fill="#121212">CLOUD/INFRA</text>
+
+      <!-- AWS -->
+      <g transform="translate(114, 0)">
+        <rect x="0" y="0" width="82" height="28" rx="5" fill="#1a1c24" stroke="#fde047" stroke-width="1.2"/>
+        <g transform="translate(8, 6)">
+          <circle cx="8" cy="8" r="7.5" fill="#25241b"/>
+          <path d="M4.2 11.2c2.4 1.3 5.2 1.3 7.6 0 .3-.2.7.1.5.4-2.8 1.8-6.1 1.8-8.6 0-.3-.3.1-.6.5-.4z" fill="#FF9900"/>
+          <path d="M12.4 10.8c-.1-.2-.6-.4-1.1-.4-.6 0-.9.4-.9.4s.2.2.4.3c.4.2.8.2 1.1.2.2 0 .5-.1.5-.5z" fill="#FF9900"/>
+          <text x="3" y="7.5" font-size="6" font-weight="900" fill="#FFFFFF" font-family="sans-serif">aws</text>
+        </g>
+        <text x="30" y="18" font-size="10.5" font-weight="800" fill="#fde047">AWS</text>
+      </g>
+
+      <!-- Cloudflare -->
+      <g transform="translate(204, 0)">
+        <rect x="0" y="0" width="134" height="28" rx="5" fill="#1a1c24" stroke="#2e3240" stroke-width="1.2"/>
+        <g transform="translate(8, 6)">
+          <circle cx="8" cy="8" r="7.5" fill="#2d2218"/>
+          <path d="M11.6 7.4c-.2-.9-.9-1.6-1.8-1.7-.5-.9-1.4-1.5-2.5-1.5-1.3 0-2.4.8-2.8 2-.3 0-.6.1-.8.3-.7.5-.9 1.4-.6 2.1H12c.7 0 1.2-.5 1.2-1.2 0-.6-.5-1.1-1.1-1.2-.2 0-.3 0-.5.2z" fill="#F38020"/>
+        </g>
+        <text x="30" y="18" font-size="10.5" font-weight="700" fill="#fb923c">Cloudflare R2</text>
+      </g>
+
+      <!-- Vercel -->
+      <g transform="translate(346, 0)">
+        <rect x="0" y="0" width="90" height="28" rx="5" fill="#1a1c24" stroke="#2e3240" stroke-width="1.2"/>
+        <g transform="translate(8, 6)">
+          <circle cx="8" cy="8" r="7.5" fill="#252525"/>
+          <path d="M8 4 13.5 13H2.5L8 4z" fill="#FFFFFF"/>
+        </g>
+        <text x="30" y="18" font-size="10.5" font-weight="700" fill="#ffffff">Vercel</text>
+      </g>
+
+      <!-- GitHub Actions -->
+      <g transform="translate(444, 0)">
+        <rect x="0" y="0" width="144" height="28" rx="5" fill="#1a1c24" stroke="#2e3240" stroke-width="1.2"/>
+        <g transform="translate(8, 6)">
+          <circle cx="8" cy="8" r="7.5" fill="#1b2a3d"/>
+          <path d="M8 4.2v2.4a1.8 1.8 0 1 1-1.8 1.8H3.8a4.2 4.2 0 1 0 4.2-4.2z" fill="#2088FF"/>
+          <circle cx="10.8" cy="8.4" r="1.2" fill="#2088FF"/>
+        </g>
+        <text x="30" y="18" font-size="10.5" font-weight="700" fill="#60a5fa">GitHub Actions</text>
       </g>
     </g>
   </g>
@@ -581,7 +669,6 @@ def create_tech_toolbox_svg(filepath):
     print(f"Created {filepath}")
 
 if __name__ == "__main__":
-    create_system_status_svg("assets/system-status.svg")
     create_exploring_cards_svg("assets/exploring-cards.svg")
     create_how_i_build_svg("assets/build-pipeline.svg")
     create_project_leetboard_svg("assets/project-leetboard.svg")

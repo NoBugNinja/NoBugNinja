@@ -21,12 +21,6 @@
 <p align="center">
   <img src="assets/hero-terminal.gif" alt="Mohammed Shafiq S — Interactive Builder Terminal & Bot" width="840" />
 </p>
-
-<!-- SYSTEM TELEMETRY STRIP -->
-<p align="center">
-  <img src="assets/system-status.svg" alt="Live System Telemetry Status" width="840" />
-</p>
-
 </div>
 
 ---
