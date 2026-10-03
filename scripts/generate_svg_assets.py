@@ -15,7 +15,8 @@ def create_exploring_cards_svg(filepath):
     <text x="12" y="21" font-size="11" font-weight="900" fill="#121212" letter-spacing="0.5">01 // FULL-STACK</text>
     <circle cx="196" cy="16" r="4" fill="#121212"/>
     <text x="14" y="56" font-size="13.5" font-weight="900" fill="#ffffff">PRODUCT BUILDER</text>
-    <text x="14" y="76" font-size="11" font-weight="500" fill="#9ca3af">Building complete web products from idea to deployment.</text>
+    <text x="14" y="74" font-size="10.5" font-weight="500" fill="#9ca3af">Building products from</text>
+    <text x="14" y="89" font-size="10.5" font-weight="500" fill="#9ca3af">idea to deployment.</text>
     <line x1="14" y1="102" x2="198" y2="102" stroke="#2d3139" stroke-width="1"/>
     <g transform="translate(14, 114)">
       <rect x="0" y="0" width="60" height="22" rx="4" fill="#232630" stroke="#fde047" stroke-width="1.5"/>
@@ -34,7 +35,8 @@ def create_exploring_cards_svg(filepath):
     <text x="12" y="21" font-size="11" font-weight="900" fill="#121212" letter-spacing="0.5">02 // CLOUD INFRA</text>
     <circle cx="196" cy="16" r="4" fill="#121212"/>
     <text x="14" y="56" font-size="13.5" font-weight="900" fill="#ffffff">AWS SOLUTIONS</text>
-    <text x="14" y="76" font-size="11" font-weight="500" fill="#9ca3af">Scalable cloud architectures, serverless, and AWS cert track.</text>
+    <text x="14" y="74" font-size="10.5" font-weight="500" fill="#9ca3af">Designing cloud systems</text>
+    <text x="14" y="89" font-size="10.5" font-weight="500" fill="#9ca3af">beyond the laptop.</text>
     <line x1="14" y1="102" x2="198" y2="102" stroke="#2d3139" stroke-width="1"/>
     <g transform="translate(14, 114)">
       <rect x="0" y="0" width="60" height="22" rx="4" fill="#232630" stroke="#a78bfa" stroke-width="1.5"/>
@@ -53,7 +55,8 @@ def create_exploring_cards_svg(filepath):
     <text x="12" y="21" font-size="11" font-weight="900" fill="#ffffff" letter-spacing="0.5">03 // AI SYSTEMS</text>
     <circle cx="196" cy="16" r="4" fill="#ffffff"/>
     <text x="14" y="56" font-size="13.5" font-weight="900" fill="#ffffff">LLMS &amp; SCRAPERS</text>
-    <text x="14" y="76" font-size="11" font-weight="500" fill="#9ca3af">Resilient data engines, schema enforcement, &amp; fast inference.</text>
+    <text x="14" y="74" font-size="10.5" font-weight="500" fill="#9ca3af">Building useful software</text>
+    <text x="14" y="89" font-size="10.5" font-weight="500" fill="#9ca3af">around AI.</text>
     <line x1="14" y1="102" x2="198" y2="102" stroke="#2d3139" stroke-width="1"/>
     <g transform="translate(14, 114)">
       <rect x="0" y="0" width="60" height="22" rx="4" fill="#232630" stroke="#3b82f6" stroke-width="1.5"/>
@@ -72,7 +75,8 @@ def create_exploring_cards_svg(filepath):
     <text x="12" y="21" font-size="11" font-weight="900" fill="#121212" letter-spacing="0.5">04 // AUTOMATION</text>
     <circle cx="202" cy="16" r="4" fill="#121212"/>
     <text x="14" y="56" font-size="13.5" font-weight="900" fill="#ffffff">SAAS PIPELINES</text>
-    <text x="14" y="76" font-size="11" font-weight="500" fill="#9ca3af">Autonomous workflows, background cron matchers, &amp; SSE streams.</text>
+    <text x="14" y="74" font-size="10.5" font-weight="500" fill="#9ca3af">Turning repetitive work</text>
+    <text x="14" y="89" font-size="10.5" font-weight="500" fill="#9ca3af">into systems.</text>
     <line x1="14" y1="102" x2="204" y2="102" stroke="#2d3139" stroke-width="1"/>
     <g transform="translate(14, 114)">
       <rect x="0" y="0" width="60" height="22" rx="4" fill="#232630" stroke="#4ade80" stroke-width="1.5"/>
@@ -736,22 +740,45 @@ def create_building_software_card_svg(filepath):
     </g>
 
     <!-- ================= MAIN PARAGRAPH (SECOND LAYER) ================= -->
-    <g transform="translate(18, 126)">
-      <text x="18" y="16" font-size="13" font-weight="500" fill="#334155" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">I’m a product-minded developer who builds complete web products from scratch. Instead of building tutorial clones,</text>
-      <text x="18" y="37" font-size="13" font-weight="500" fill="#334155" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">I look for genuine friction points — manual tracking, unvalidated startup assumptions, or noisy candidate screening —</text>
-      <text x="18" y="58" font-size="13" font-weight="800" fill="#0f172a" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">and build tools that actually work.</text>
+    <g transform="translate(18, 122)">
+      <text x="18" y="15" font-size="12.5" font-weight="500" fill="#334155" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">I’m a product-minded developer who builds complete web products from scratch.</text>
+      <text x="18" y="32" font-size="12.5" font-weight="500" fill="#334155" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">Instead of building tutorial clones, I look for genuine friction points — manual tracking,</text>
+      <text x="18" y="49" font-size="12.5" font-weight="500" fill="#334155" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">unvalidated startup assumptions, or noisy candidate screening —</text>
+      <text x="18" y="67" font-size="12.5" font-weight="800" fill="#0f172a" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">and build tools that actually work.</text>
     </g>
 
-    <!-- ================= SUBTLE BOTTOM-RIGHT CIRCUIT TRACE ================= -->
-    <g transform="translate(420, 180)">
-      <path d="M 0 6 L 140 6 L 156 18 L 310 18 L 324 6 L 430 6 L 444 -8 L 444 -16" fill="none" stroke="#cbd5e1" stroke-width="1.5" stroke-linecap="round"/>
-      <circle cx="0" cy="6" r="2.5" fill="#10b981" stroke="#121212" stroke-width="1.2"/>
-      <circle cx="310" cy="18" r="2.5" fill="#3b82f6" stroke="#121212" stroke-width="1.2"/>
-      <circle cx="430" cy="6" r="2.5" fill="#fde047" stroke="#121212" stroke-width="1.2"/>
-      <text x="12" y="-2" font-size="8" font-weight="800" fill="#94a3b8" font-family="monospace">TRACE // 0x4B</text>
-      <text x="175" y="10" font-size="8" font-weight="800" fill="#64748b" font-family="monospace">SYSTEM // PRODUCTION READY</text>
+    <!-- ================= SUBTLE BOTTOM-RIGHT CIRCUIT TRACE & PORTFOLIO CTA ================= -->
+    <g transform="translate(500, 172)">
+      <path d="M 0 0 L 190 0 L 206 0" fill="none" stroke="#cbd5e1" stroke-width="1.5" stroke-linecap="round"/>
+      <circle cx="0" cy="0" r="2.5" fill="#3b82f6" stroke="#121212" stroke-width="1.2"/>
+      <circle cx="100" cy="0" r="2.5" fill="#fde047" stroke="#121212" stroke-width="1.2"/>
+      <circle cx="206" cy="0" r="3" fill="#10b981" stroke="#121212" stroke-width="1.2"/>
+      <text x="10" y="-6" font-size="8" font-weight="800" fill="#94a3b8" font-family="monospace">TRACE // 0x4B</text>
+      <text x="110" y="-6" font-size="8" font-weight="800" fill="#64748b" font-family="monospace">LIVE // PROD</text>
     </g>
+
+    <!-- Physical Button CTA: VIEW PORTFOLIO ↗ -->
+    <a href="https://mohammed-shafiq-s.vercel.app" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
+      <g transform="translate(706, 156)" cursor="pointer">
+        <rect x="0" y="0" width="168" height="32" rx="5" fill="#fde047" stroke="#121212" stroke-width="2" filter="url(#inner-shadow)"/>
+        <text x="18" y="20" font-size="10.5" font-weight="900" fill="#121212" letter-spacing="0.5" font-family="-apple-system, BlinkMacSystemFont, Consolas, 'Segoe UI', monospace">VIEW PORTFOLIO ↗</text>
+      </g>
+    </a>
   </g>
+</svg>"""
+    with open(filepath, "w", encoding="utf-8") as f:
+        f.write(svg_content.strip())
+    print(f"Created {filepath}")
+
+def create_portfolio_button_svg(filepath):
+    svg_content = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 172 36" width="172" height="36" style="font-family: -apple-system, BlinkMacSystemFont, Consolas, 'Segoe UI', monospace;">
+  <defs>
+    <filter id="btn-shadow" x="0%" y="0%" width="120%" height="120%">
+      <feDropShadow dx="2" dy="2" stdDeviation="0" flood-color="#121212" flood-opacity="1"/>
+    </filter>
+  </defs>
+  <rect x="2" y="2" width="164" height="30" rx="5" fill="#fde047" stroke="#121212" stroke-width="2" filter="url(#btn-shadow)"/>
+  <text x="18" y="21" font-size="10.5" font-weight="900" fill="#121212" letter-spacing="0.5">VIEW PORTFOLIO ↗</text>
 </svg>"""
     with open(filepath, "w", encoding="utf-8") as f:
         f.write(svg_content.strip())
@@ -766,3 +793,4 @@ if __name__ == "__main__":
     create_project_opportunityos_svg("assets/project-opportunityos.svg")
     create_tech_toolbox_svg("assets/tech-toolbox.svg")
     create_building_software_card_svg("assets/building-software-card.svg")
+    create_portfolio_button_svg("assets/portfolio-cta.svg")

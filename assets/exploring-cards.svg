@@ -12,7 +12,8 @@
     <text x="12" y="21" font-size="11" font-weight="900" fill="#121212" letter-spacing="0.5">01 // FULL-STACK</text>
     <circle cx="196" cy="16" r="4" fill="#121212"/>
     <text x="14" y="56" font-size="13.5" font-weight="900" fill="#ffffff">PRODUCT BUILDER</text>
-    <text x="14" y="76" font-size="11" font-weight="500" fill="#9ca3af">Building complete web products from idea to deployment.</text>
+    <text x="14" y="74" font-size="10.5" font-weight="500" fill="#9ca3af">Building products from</text>
+    <text x="14" y="89" font-size="10.5" font-weight="500" fill="#9ca3af">idea to deployment.</text>
     <line x1="14" y1="102" x2="198" y2="102" stroke="#2d3139" stroke-width="1"/>
     <g transform="translate(14, 114)">
       <rect x="0" y="0" width="60" height="22" rx="4" fill="#232630" stroke="#fde047" stroke-width="1.5"/>
@@ -31,7 +32,8 @@
     <text x="12" y="21" font-size="11" font-weight="900" fill="#121212" letter-spacing="0.5">02 // CLOUD INFRA</text>
     <circle cx="196" cy="16" r="4" fill="#121212"/>
     <text x="14" y="56" font-size="13.5" font-weight="900" fill="#ffffff">AWS SOLUTIONS</text>
-    <text x="14" y="76" font-size="11" font-weight="500" fill="#9ca3af">Scalable cloud architectures, serverless, and AWS cert track.</text>
+    <text x="14" y="74" font-size="10.5" font-weight="500" fill="#9ca3af">Designing cloud systems</text>
+    <text x="14" y="89" font-size="10.5" font-weight="500" fill="#9ca3af">beyond the laptop.</text>
     <line x1="14" y1="102" x2="198" y2="102" stroke="#2d3139" stroke-width="1"/>
     <g transform="translate(14, 114)">
       <rect x="0" y="0" width="60" height="22" rx="4" fill="#232630" stroke="#a78bfa" stroke-width="1.5"/>
@@ -50,7 +52,8 @@
     <text x="12" y="21" font-size="11" font-weight="900" fill="#ffffff" letter-spacing="0.5">03 // AI SYSTEMS</text>
     <circle cx="196" cy="16" r="4" fill="#ffffff"/>
     <text x="14" y="56" font-size="13.5" font-weight="900" fill="#ffffff">LLMS &amp; SCRAPERS</text>
-    <text x="14" y="76" font-size="11" font-weight="500" fill="#9ca3af">Resilient data engines, schema enforcement, &amp; fast inference.</text>
+    <text x="14" y="74" font-size="10.5" font-weight="500" fill="#9ca3af">Building useful software</text>
+    <text x="14" y="89" font-size="10.5" font-weight="500" fill="#9ca3af">around AI.</text>
     <line x1="14" y1="102" x2="198" y2="102" stroke="#2d3139" stroke-width="1"/>
     <g transform="translate(14, 114)">
       <rect x="0" y="0" width="60" height="22" rx="4" fill="#232630" stroke="#3b82f6" stroke-width="1.5"/>
@@ -69,7 +72,8 @@
     <text x="12" y="21" font-size="11" font-weight="900" fill="#121212" letter-spacing="0.5">04 // AUTOMATION</text>
     <circle cx="202" cy="16" r="4" fill="#121212"/>
     <text x="14" y="56" font-size="13.5" font-weight="900" fill="#ffffff">SAAS PIPELINES</text>
-    <text x="14" y="76" font-size="11" font-weight="500" fill="#9ca3af">Autonomous workflows, background cron matchers, &amp; SSE streams.</text>
+    <text x="14" y="74" font-size="10.5" font-weight="500" fill="#9ca3af">Turning repetitive work</text>
+    <text x="14" y="89" font-size="10.5" font-weight="500" fill="#9ca3af">into systems.</text>
     <line x1="14" y1="102" x2="204" y2="102" stroke="#2d3139" stroke-width="1"/>
     <g transform="translate(14, 114)">
       <rect x="0" y="0" width="60" height="22" rx="4" fill="#232630" stroke="#4ade80" stroke-width="1.5"/>

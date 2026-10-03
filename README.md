@@ -28,7 +28,7 @@
 ## ⚡ BUILDING SOFTWARE THAT WORKS.
 
 <p align="center">
-  <img src="assets/building-software-card.svg" alt="Building Software That Works — Mohammed Shafiq S" width="900" />
+  <a href="https://mohammed-shafiq-s.vercel.app"><img src="assets/building-software-card.svg" alt="Building Software That Works — Mohammed Shafiq S — View Portfolio" width="900" /></a>
 </p>
 
 ---
